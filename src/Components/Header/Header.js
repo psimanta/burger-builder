@@ -1,11 +1,11 @@
 import React from 'react';
 import './Header.css';
+import { NavLink } from 'react-router-dom';
 import {
     Navbar,
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
 } from 'reactstrap';
 
 const Header = () => {
@@ -15,7 +15,10 @@ const Header = () => {
                 <NavbarBrand href="/" className="mr-auto ml-md-5 Brand"><img src="assets/images/logo.png" alt="Logo" width="80px" /></NavbarBrand>
                 <Nav className="mr-md-5">
                     <NavItem>
-                        <NavLink href="#" className="NavLink">Something</NavLink>
+                        <NavLink exact to="/" className="NavLink">Burger Builder</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink exact to="/orders" className="NavLink">Orders</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar>

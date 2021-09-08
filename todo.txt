@@ -1,5 +1,0 @@
-# Clean Up
-# Clean App.css
-# App -> Components/Main
-# Header, BurgerBuilder
-# Main -> Header, BurgerBuilder
